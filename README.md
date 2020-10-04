@@ -13,7 +13,7 @@ A minimal boilerplate for the essential files Gatsby looks for in a plugin.
 
 To get started creating a new plugin, you can follow these steps:
 
-1. Initialize a new plugin from the starter with `gatsby new`
+1. Initialize a new plugin from the starter with `gatsby new`.
 
 ```shell
 gatsby new my-plugin https://github.com/gatsbyjs/gatsby-starter-plugin
@@ -40,7 +40,7 @@ Your directory structure will look similar to this:
 
 With `my-gatsby-site` being your Gatsby site, and `my-plugin` being your plugin. You could also include the plugin in your [site's `plugins` folder](https://www.gatsbyjs.com/docs/loading-plugins-from-your-local-plugins-folder/).
 
-2. Include the plugin in a Gatsby site
+2. Include the plugin in a Gatsby site.
 
 Inside of the `gatsby-config.js` file of your site (in this case, `my-gatsby-site`), include the plugin in the `plugins` array:
 
@@ -58,7 +58,7 @@ The line `require.resolve('../my-plugin')` is what accesses the plugin based on 
 
 _You can use this method to test and develop your plugin before you publish it to a package registry like npm. Once published, you would instead install it and [add the plugin name to the array](https://www.gatsbyjs.com/docs/using-a-plugin-in-your-site/). You can read about other ways to connect your plugin to your site including using `npm link` or `yarn workspaces` in the [doc on creating local plugins](https://www.gatsbyjs.com/docs/creating-a-local-plugin/#developing-a-local-plugin-that-is-outside-your-project)._
 
-3. Verify the plugin was added correctly
+3. Verify the plugin was added correctly.
 
 The plugin added by the starter implements a single Gatsby API in the `gatsby-node` that logs a message to the console. When you run `gatsby develop` or `gatsby build` in the site that implements your plugin, you should see this message.
 
@@ -75,7 +75,7 @@ success onPreInit - 0.016s
 ...
 ```
 
-4. Rename the plugin in the `package.json`
+4. Rename the plugin in the `package.json`.
 
 When you clone the site, the information in the `package.json` will need to be updated. Name your plugin based off of [Gatsby's conventions for naming plugins](https://www.gatsbyjs.com/docs/naming-a-plugin/).
 
